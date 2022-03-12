@@ -20,21 +20,24 @@ public class GoogleHomePageTest {
 		System.out.println("launching Chrome browser");
 		System.setProperty("webdriver.chrome.driver", driverPath);
 		
+		ChromeOptions options = new ChromeOptions();
+		
+		options.addArguments("--no-sandbox");
+		
 		driver = new ChromeDriver();
 		driver.get(baseUrl);
 	}
 	
 	@Test
 	public void verifyGooglePageTittle() {
- 		driver.navigate().to(appURL);
+		driver.navigate().to(appURL);
 		String getTitle = driver.getTitle();
 		Assert.assertEquals(getTitle, "Google");
- 	}
+	}
 	
 	@AfterClass
 	public void tearDown() {
-		if (driver != null)
-			driver.quit();
+		driver.quit();
 	}
 	
 }

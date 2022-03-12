@@ -13,7 +13,7 @@ public class GoogleHomePageTest {
 	private WebDriver driver; 
 	String appURL = "http://google.com";
 	public String baseUrl = "https://www.google.com/";
-	String driverPath = "chromedriver.exe";
+	String driverPath = "chromedriver";
 	
 	@BeforeClass
 	public void testSetUp() {

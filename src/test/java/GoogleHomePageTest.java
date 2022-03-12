@@ -23,9 +23,9 @@ public class GoogleHomePageTest {
 		ChromeOptions options = new ChromeOptions();
 		
 		options.addArguments("--no-sandbox");
-		options.addArguments("--headless")	
-		options.addArguments('--no-sandbox')
-		options.addArguments('--disable-dev-shm-usage')		
+		options.addArguments("--headless");	
+		options.addArguments('--no-sandbox');
+		options.addArguments('--disable-dev-shm-usage');		
 		
 		driver = new ChromeDriver(options);
 		driver.get(baseUrl);

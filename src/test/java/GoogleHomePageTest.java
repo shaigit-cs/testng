@@ -24,7 +24,7 @@ public class GoogleHomePageTest {
 		
 		options.addArguments("--no-sandbox");
 		
-		driver = new ChromeDriver();
+		driver = new ChromeDriver(options);
 		driver.get(baseUrl);
 	}
 	

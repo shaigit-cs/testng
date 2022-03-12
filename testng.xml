@@ -3,9 +3,7 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="Command Line Tests" >
         <classes>
-            <class name="ParallelTesting"></class>
-            <class name="FirstChromeSearch"></class>
-            <class name="MultipleBrowser.MultipleBrowser"></class>
+            <class name="GoogleHomePageTest"></class>
         </classes>
     </test>
 </suite>

@@ -24,12 +24,12 @@ public class GoogleHomePageTest {
 		driver.get(baseUrl);
 	}
 	
-	@Test
-	public void verifyGooglePageTittle() {
-		driver.navigate().to(appURL);
-		String getTitle = driver.getTitle();
-		Assert.assertEquals(getTitle, "Google");
-	}
+// 	@Test
+// 	public void verifyGooglePageTittle() {
+// 		driver.navigate().to(appURL);
+// 		String getTitle = driver.getTitle();
+// 		Assert.assertEquals(getTitle, "Google");
+// 	}
 	
 	@AfterClass
 	public void tearDown() {
